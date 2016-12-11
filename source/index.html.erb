@@ -175,7 +175,6 @@ a:hover {
 }
 
 .card{
-  padding: 100px;
   font-weight: lighter;
   color:white;
   background-color: rgba(0,0,0,.5);
@@ -186,12 +185,14 @@ a:hover {
   background-image: url("images/cnc1.jpg");
   background-size: cover;
   padding:100px;
+  height:520px;
 }
 
 #industry{
   background-image: url("images/cnc2.jpg");
   background-size: cover;
   padding:100px;
+  height:520px;
 }
 
 #footer{
@@ -212,7 +213,7 @@ a:hover {
         <ol>
           <li>Create a new <code>index.html</code> file with the Bootstrap template below</li>
           <li>Inject your content in the <code>body</code></li>
-          <li>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</li>
+          <li>Play with <code>class="btn btn-primary"</code> and <code>class="form-inline"</code>, your first Bootstrap classes</li>
         </ol>
 <% code("html") do %>
 <!DOCTYPE html>
@@ -225,7 +226,6 @@ a:hover {
     <title>Condé Nast Center</title>
 
     <link rel="stylesheet" href="http://libs.baidu.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://apps.bdimg.com/libs/fontawesome/4.1.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 
   </head>
@@ -246,13 +246,13 @@ a:hover {
           <li>Inject your 2 cards div in the following responsive grid</li>
         </ul>
 <% code("html") do %>
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-xs-12 col-sm-12 col-md-6">
-      <!-- div class="card" -->
+    <div class="col-xs-12 col-md-6">
+      <!-- card 1 -->
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-6">
-      <!-- div class="card" -->
+    <div class="col-xs-12 col-md-6">
+      <!-- card 2 -->
     </div>
   </div>
 </div>
