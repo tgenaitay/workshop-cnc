@@ -113,28 +113,29 @@
           <li>For colors use <a href="http://www.colorzilla.com/chrome/" target="_blank">Colorzilla Chrome plugin</a> to pick colors from other websites</li>
           <li>You can also find beautiful colors on <a href="https://coolors.co/" target="_blank">Coolors</a> or <a href="http://colorhunt.co/" target="_blank">Color Hunt</a></li>
         </ul>
-<pre class="highlight css"><code><span class="c">/* style.css */</span>
+<pre class="highlight css"><code><span class="c">/* global style.css */</span>
 <span class="nt">body</span><span class="p">{</span>
   <span class="nl">background</span><span class="p">:</span> <span class="m">#f8f8f8</span><span class="p">;</span>
   <span class="nl">color</span><span class="p">:</span> <span class="m">#333</span><span class="p">;</span>
-  <span class="nl">font-size</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">14px</span><span class="p">;</span>
   <span class="nl">font-family</span><span class="p">:</span> <span class="n">Helvetica</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">h1</span><span class="p">{</span>
   <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Montserrat'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
   <span class="nl">color</span><span class="p">:</span> <span class="m">#d2111b</span><span class="p">;</span>
   <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
-  <span class="nl">font-size</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">40px</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">h2</span> <span class="p">{</span>
   <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Montserrat'</span><span class="p">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
   <span class="nl">color</span><span class="p">:</span> <span class="no">pink</span><span class="p">;</span>
   <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
-  <span class="nl">font-size</span><span class="p">:</span> <span class="m">8px</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">25px</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">a</span> <span class="p">{</span>
   <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
   <span class="nl">background-color</span><span class="p">:</span><span class="m">#d2111b</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span><span class="m">8px</span><span class="p">;</span>
 <span class="p">}</span>
 <span class="nt">a</span><span class="nd">:hover</span> <span class="p">{</span>
   <span class="nl">text-decoration</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
@@ -150,6 +151,7 @@
   <span class="nt">&lt;head&gt;</span>
     <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;title&gt;</span>Condé Nast Center<span class="nt">&lt;/title&gt;</span>
+    <span class="nt">&lt;link</span> <span class="na">href=</span><span class="s">'style.css'</span> <span class="na">rel=</span><span class="s">'stylesheet'</span><span class="nt">&gt;</span>
   <span class="nt">&lt;/head&gt;</span>
   <span class="nt">&lt;body&gt;</span>
 
@@ -160,13 +162,17 @@
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;div&gt;</span>
       <span class="nt">&lt;h2&gt;</span>PREMIER EXECUTIVE FASHION EDUCATION PROVIDER<span class="nt">&lt;/h2&gt;</span>
       <span class="nt">&lt;p&gt;</span>Powered by Condé Nast and its world-leading multimedia brands, the Shanghai-based Center is the premier lifelong and executive fashion education provider in China. The Center’s mission is to identify, cultivate, support, and inspire current and future talents for the fashion, media and design industry. It carries on Condé Nast’s core value of authority, credibility and quality, and pushes new frontiers in innovation and insight.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div&gt;</span>
+      <span class="nt">&lt;div&gt;</span>
       <span class="nt">&lt;h2&gt;</span>UNPARALLELED INDUSTRY CONNECTIONS<span class="nt">&lt;/h2&gt;</span>
       <span class="nt">&lt;p&gt;</span>No other fashion education providers in China can compete with our industry connections. Over the past 100 years, Condé Nast have developed the strongest and most active partnerships with the world’s leading fashion and luxury brands, as well as top players in the Chinese market. We don't just teach for the industry, we ARE the industry.<span class="nt">&lt;/p&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 
     <span class="nt">&lt;div&gt;</span>
@@ -181,27 +187,51 @@
         <h2 class="readme-header">5. Name your tags</h2>
         <ul>
           <li>Name your header and footer with <code>id</code> like <code>&lt;div id="header"&gt;</code> and <code>&lt;div id="footer"&gt;</code></li>
-          <li>Name your features with <code>class</code> like <code>&lt;div class="card"&gt;</code></li>
+          <li>Name each feature with <code>id</code> like <code>&lt;div id="premier"&gt;</code> and <code>&lt;div id="industry"&gt;</code></li>
+          <li>Wrap your 2 features content with <code>class</code> like <code>&lt;div class="card"&gt;</code></li>
           <li>Then add this nice CSS code</li>
         </ul>
-<pre class="highlight css"><code><span class="nf">#header</span><span class="p">{</span>
+<pre class="highlight css"><code><span class="c">/* targeted style.css */</span>
+
+<span class="nf">#header</span><span class="p">{</span>
   <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
   <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("images/banner.jpg")</span><span class="p">;</span>
   <span class="nl">background-size</span><span class="p">:</span> <span class="n">cover</span><span class="p">;</span>
   <span class="nl">padding</span><span class="p">:</span> <span class="m">150px</span><span class="p">;</span>
   <span class="nl">color</span><span class="p">:</span> <span class="no">white</span><span class="p">;</span>
-  <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">1px</span> <span class="m">1px</span> <span class="m">5px</span> <span class="no">black</span><span class="p">;</span>
+  <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">1px</span> <span class="m">1px</span> <span class="m">10px</span> <span class="no">black</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="nc">.card</span><span class="p">{</span>
   <span class="nl">padding</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
   <span class="nl">font-weight</span><span class="p">:</span> <span class="nb">lighter</span><span class="p">;</span>
+  <span class="nl">color</span><span class="p">:</span><span class="no">white</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">0</span><span class="p">,</span><span class="m">.5</span><span class="p">);</span>
+  <span class="nl">padding</span><span class="p">:</span><span class="m">30px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#premier</span><span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("images/cnc1.jpg")</span><span class="p">;</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="n">cover</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span><span class="m">100px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#industry</span><span class="p">{</span>
+  <span class="nl">background-image</span><span class="p">:</span> <span class="sx">url("images/cnc2.jpg")</span><span class="p">;</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="n">cover</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span><span class="m">100px</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="nf">#footer</span><span class="p">{</span>
   <span class="nl">padding</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
   <span class="nl">background</span><span class="p">:</span> <span class="m">#202022</span><span class="p">;</span>
   <span class="nl">color</span><span class="p">:</span> <span class="no">lightgrey</span><span class="p">;</span>
+  <span class="nl">text-align</span><span class="p">:</span><span class="nb">center</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nf">#cta</span> <span class="p">{</span>
+  <span class="nl">top</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+  <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre>
       </section>
