@@ -1,17 +1,18 @@
-## Le Wagon Shanghai 
+## Le Wagon Shanghai
+###@ Condé Nast center of fashion & design
 
-###HTML & CSS Workshop
+HTML & CSS Workshop "Code your landing page"
 
-`Update: Dec 7`
+`Update: Dec 12`
 
-1. [Browse tutorial](https://tgenaitay.github.io/landing/)
-2. [Download the slides](https://github.com/tgenaitay/landing/raw/gh-pages/Le-Wagon-Landing-page-Dec-7-Shanghai.pdf)
+1. [Browse tutorial](https://tgenaitay.github.io/workshop-cnc/)
+2. [Download the slides](https://github.com/tgenaitay/workshop-cnc/raw/gh-pages/Le-Wagon-Landing-page-Dec-12-Shanghai.pdf)
 3. **Build your own!**
 3. [Contact us](mailto:shanghai@lewagon.org)
 4. Join next courses...
 
 More in WeChat:
 
-![QRcode](https://tgenaitay.github.io/landing/images/QRCodeLeWagon.gif)
+![QRcode](https://tgenaitay.github.io/workshop-cnc/images/QRCodeLeWagon.gif)
 
 
