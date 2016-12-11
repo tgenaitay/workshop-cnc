@@ -83,28 +83,29 @@ title: Le Wagon 2-hour landing workshop
           <li>You can also find beautiful colors on <a href="https://coolors.co/" target="_blank">Coolors</a> or <a href="http://colorhunt.co/" target="_blank">Color Hunt</a></li>
         </ul>
 <% code("css") do %>
-/* style.css */
+/* global style.css */
 body{
   background: #f8f8f8;
   color: #333;
-  font-size: 25px;
+  font-size: 14px;
   font-family: Helvetica;
 }
 h1{
   font-family: 'Montserrat', sans-serif;
   color: #d2111b;
   font-weight: lighter;
-  font-size: 10px;
+  font-size: 40px;
 }
 h2 {
   font-family: 'Montserrat', sans-serif;
   color: pink;
   font-weight: lighter;
-  font-size: 8px;
+  font-size: 25px;
 }
 a {
   color: white;
   background-color:#d2111b;
+  padding:8px;
 }
 a:hover {
   text-decoration: none;
@@ -121,6 +122,7 @@ a:hover {
   <head>
     <meta charset="utf-8">
     <title>Condé Nast Center</title>
+    <link href='style.css' rel='stylesheet'>
   </head>
   <body>
 
@@ -131,13 +133,17 @@ a:hover {
     </div>
 
     <div>
+      <div>
       <h2>PREMIER EXECUTIVE FASHION EDUCATION PROVIDER</h2>
       <p>Powered by Condé Nast and its world-leading multimedia brands, the Shanghai-based Center is the premier lifelong and executive fashion education provider in China. The Center’s mission is to identify, cultivate, support, and inspire current and future talents for the fashion, media and design industry. It carries on Condé Nast’s core value of authority, credibility and quality, and pushes new frontiers in innovation and insight.</p>
+      </div>
     </div>
 
     <div>
+      <div>
       <h2>UNPARALLELED INDUSTRY CONNECTIONS</h2>
       <p>No other fashion education providers in China can compete with our industry connections. Over the past 100 years, Condé Nast have developed the strongest and most active partnerships with the world’s leading fashion and luxury brands, as well as top players in the Chinese market. We don't just teach for the industry, we ARE the industry.</p>
+      </div>
     </div>
 
     <div>
@@ -152,28 +158,52 @@ a:hover {
         <h2 class="readme-header">5. Name your tags</h2>
         <ul>
           <li>Name your header and footer with <code>id</code> like <code>&lt;div id="header"&gt;</code> and <code>&lt;div id="footer"&gt;</code></li>
-          <li>Name your features with <code>class</code> like <code>&lt;div class="card"&gt;</code></li>
+          <li>Name each feature with <code>id</code> like <code>&lt;div id="premier"&gt;</code> and <code>&lt;div id="industry"&gt;</code></li>
+          <li>Wrap your 2 features content with <code>class</code> like <code>&lt;div class="card"&gt;</code></li>
           <li>Then add this nice CSS code</li>
         </ul>
 <% code("css") do %>
+/* targeted style.css */
+
 #header{
   text-align: center;
   background-image: url("images/banner.jpg");
   background-size: cover;
   padding: 150px;
   color: white;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 10px black;
 }
 
 .card{
   padding: 100px;
   font-weight: lighter;
+  color:white;
+  background-color: rgba(0,0,0,.5);
+  padding:30px;
+}
+
+#premier{
+  background-image: url("images/cnc1.jpg");
+  background-size: cover;
+  padding:100px;
+}
+
+#industry{
+  background-image: url("images/cnc2.jpg");
+  background-size: cover;
+  padding:100px;
 }
 
 #footer{
   padding: 100px;
   background: #202022;
   color: lightgrey;
+  text-align:center;
+}
+
+#cta {
+  top: 30px;
+  position: relative;
 }
 <% end %>
       </section>
